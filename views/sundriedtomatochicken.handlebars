@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<!-- style nav bar, add algorithm, add back buton -->
+<head>
+    
+    <!-- styles the input bar -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/chickensandwichrecipe.css">
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<title>Tastebuddies</title>
+</head>
+
+<body style="overflow:hidden">
+    <div class="wrapper">
+            <!--Top Navbar-->
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="cook">
+                            <h3 id="tastebuddiestitle">Tastebuddies</h3>
+                        </a>
+                        
+                        <div class="dropdown pull-right">
+                            <button id="dLabel" type="button" class = "btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </button>
+                            <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+                                <li class="active"><a href="cook">COOK</a></li>
+                                <li><a href="profile">PROFILE</a></li>
+                                <li><a href="tastebuddies">TASTEBUDDIES</a></li>
+                                <li><a href="help">HELP</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="index">SIGN OUT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    <!-- start -->
+        <button type="button" id="back">BACK</button>
+        
+        <h1>Sun-Dried Tomato Chicken</h1>
+        <p id="servings">Servings: 1</p>
+        
+        <div class="container recipe" style="height:400px; overflow-y:scroll" >
+        <img class="recipes" src="img/sundriedtomatochicken.jpg" height="300" width="340"> 
+        <div class="have">
+        <h2>Items You Need</h2>
+            <ul class="ingredients">
+                {{#each sundriedtomatochickenrecipe}}
+                <li id="ingredients">{{name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <!--
+        <div class="want">
+        <h2>Items You May Need</h2>
+            <ul class="ingredients">
+                <li id="ingredients">2 slices of bread</li>
+                <li id="ingredients">mustard, mayonnaise, and/or ketchup</li>
+                <li id="ingredients">cheese slices</li>
+            </ul>
+        </div>-->
+        
+        <div class="directions">
+        <h2>Directions</h2>
+            <p>1. Arrange chicken pieces in a single layer in a lightly greased 13- x 9-inch baking dish. Pour dressing evenly over chicken pieces, and sprinkle with ground pepper. 2. Bake, uncovered, at 400° for 1 hour or until done, basting every 15 minutes. Sprinkle baked chicken with desired toppings. Note: For testing purposes only, we used Good Seasons Sun Dried Tomato Vinaigrette With Roasted Red Pepper dressing. Sun-dried Tomato Chicken Breasts: Substitute 6 skinned and boned chicken breasts for chicken pieces. Prepare recipe as directed, decreasing bake time to 30 minutes.</p>
+        </div>
+
+        <div class= "text-center">
+        <button class="btn bookmark tastebtn" type="submit" formaction="sundriedtomatochicken"><a href="#">Bookmark</a></button>
+        <button class ="btn completion tastebtn"><a href ="completion"> Complete<a></button>
+        </div>
+        
+    </div>
+    
+    </div> <!-- end of wrapper div -->
+    
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/backbutton.js"></script>
+    <script src="js/bookmarkaction.js"></script>
+</body>
+</html>

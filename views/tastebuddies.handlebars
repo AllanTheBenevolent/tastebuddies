@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<!-- style nav bar, add algorithm, add back buton -->
+<head>
+    <!-- styles the input bar -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/tastebuddies.css">
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+	<title>Tastebuddies | Recipes</title>
+</head>
+
+<body style="overflow:hidden">
+    <div class="wrapper">
+        <!--Top Navbar-->
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="cook">
+                            <h3 id="tastebuddiestitle">Tastebuddies</h3>
+                        </a>
+                        
+                        <div class="dropdown pull-right">
+                            <button id="dLabel" type="button" class = "btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </button>
+                            <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+                                <li><a href="cook">COOK</a></li>
+                                <li><a href="profile">PROFILE</a></li>
+                                <li class="active"><a href="tastebuddies">TASTEBUDDIES</a></li>
+                                <li><a href="help">HELP</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="index">SIGN OUT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+                                                        
+        <!-- Header -->
+        <h1> Tastebuddies</h1>
+        <p id="description"> Tastebuddies are your friends. They help you cook and eat yummy meals. Find new friends by trying new recipes! Click on the tastebuddy you want to use!</p>
+          
+        <!-- List of Tastebuddies -->
+        <div class="container tastebuddylist" style="height:400px; overflow-y:scroll" >
+        <div class="row">
+            {{#each alltastebuddies}}
+            <div class="col-xs-6 col-sm-4">
+                <a href="#{{popup}}" class="tastebuddy project-link" data-toggle="modal"><img class="tastebuddy top unlocked" src="{{image}}">
+                    <p id="tastebuddy">{{name}}</p></a>
+
+                <br>
+
+                <!--Info button generates information about tastebuddy-->
+                <div class= "text-center">
+                 <a href="#{{id}}" class="project-link" data-toggle="modal"> 
+                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>Info</button> </a>
+                </div>
+            </div>
+            {{/each}}
+
+            <!--
+            <div class="col-xs-6 col-sm-4">
+                <a href="#" class="tastebuddy"><img class="tastebuddy top unlocked" src="img/pandacakee.png"><p id="tastebuddy">Pandacake</p></a>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <a href="#" class="tastebuddy"><img class="tastebuddy top unlocked" src="img/mrfryingpan.png"><p id="tastebuddy">PanPan</p></a>
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <a href="#" class="tastebuddy"><img class="tastebuddy unlocked" src="img/boiled egg.png"><p id="tastebuddy">Eggy</p></a>
+            </div>  
+            <div class="col-xs-6 col-sm-4">
+                <a href="#" class="tastebuddy"><img class="tastebuddy unlocked" src="img/bearger.png"><p id="tastebuddy">Bearger</p></a>
+            </div>-->
+            <div class="col-xs-6 col-sm-4">
+                <a href="#" class="tastebuddyLocked"><img class="tastebuddy" src="img/pizza-locked.png"><p id="tastebuddy">Locked</p></a>
+
+                <!--temporary will put button in when finished -->
+                <p class ="text-center">Info button will consturct</p>    
+
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <a href="#" class="tastebuddyLocked"><img class="tastebuddy" src="img/cupcake-locked.png"><p id="tastebuddy">Locked</p></a>
+
+                <!--temporary will put button in when finished -->
+                <p class ="text-center">Info button will consturct</p>
+
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <a href="#" class="tastebuddyLocked"><img class="tastebuddy bottom" src="img/pizza-locked.png"><p id="tastebuddy">Locked</p></a>
+
+            <!--temporary will put button in when finished -->
+                <p class ="text-center">Info button will consturct</p>
+
+            </div><div class="col-xs-6 col-sm-4">
+                <a href="#" class="tastebuddyLocked"><img class="tastebuddy bottom" src="img/cupcake-locked.png"><p id="tastebuddy">Locked</p></a>
+
+             <!--temporary will put button in when finished -->
+                <p class ="text-center">Info button will consturct</p>   
+            </div>
+         </div> <!--end row div-->                                                   
+        </div> <!-- end container div-->
+        
+</div> <!-- end wrapper div -->
+
+
+<!--- -->
+<!--- -->
+<!---Section for Pop out modal modules -->
+<!--- -->
+<!--- -->
+
+ <!---Pandacakes description for Info button -->
+ <div class="project-modal modal fade" id="tastebuddy_1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+
+                            <h1>Pandacakes</h1>
+        
+                            <br>
+                            
+                            <h4>description</h4>
+                            
+                        </div>
+
+                         <div>
+                        <button type="button" class="tastebtn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!---Popup when clicking on img -->
+
+     <div class="project-modal modal fade" id="popupbuddy_1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+
+                            <h1>THANKS FOR PICKING ME</h1>
+        
+                            <br>
+                            
+                            <h4>description</h4>
+                            
+                        </div>
+
+                         <div>
+                        <button type="button" class="tastebtn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/tastebuddies.js"></script>
+    
+</body>
+</html>
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<!-- style nav bar, add algorithm, add back buton -->
+<head>
+    
+    <!-- styles the input bar -->
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/chickensandwichrecipe.css">
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+	<title>Tastebuddies</title>
+</head>
+
+<body style="overflow:hidden">
+    <div class="wrapper">
+            <!--Top Navbar-->
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="cook">
+                            <h3 id="tastebuddiestitle">Tastebuddies</h3>
+                        </a>
+                        
+                        <div class="dropdown pull-right">
+                            <button id="dLabel" type="button" class = "btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </button>
+                            <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+                                <li class="active"><a href="cook">COOK</a></li>
+                                <li><a href="profile">PROFILE</a></li>
+                                <li><a href="tastebuddies">TASTEBUDDIES</a></li>
+                                <li><a href="help">HELP</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="index">SIGN OUT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    <!-- start -->
+        <button type="button" id="back">BACK</button>
+        
+        <h1>Crispy Oven Fried Chicken</h1>
+        <p id="servings">Servings: 1</p>
+        
+        <div class="container recipe" style="height:400px; overflow-y:scroll" >
+        <img class="recipes" src="img/friedchicken.jpg" height="300" width="340"> 
+        <div class="have">
+        <h2>Items You Need</h2>
+            <ul class="ingredients">
+                {{#each friedchickenrecipe}}
+                <li id="ingredients">{{name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+        <!--
+        <div class="want">
+        <h2>Items You May Need</h2>
+            <ul class="ingredients">
+                <li id="ingredients">2 slices of bread</li>
+                <li id="ingredients">mustard, mayonnaise, and/or ketchup</li>
+                <li id="ingredients">cheese slices</li>
+            </ul>
+        </div>-->
+        
+        <div class="directions">
+        <h2>Directions</h2>
+            <p>1. Combine first 5 ingredients in a large zip-top plastic freezer bag; seal and shake well to combine. 2. Pour buttermilk into a shallow bowl. Dip 2 drumsticks in buttermilk, and place in bag. Seal and shake well, coating drumsticks completely. Place drumsticks on an aluminum foil-lined baking sheet coated with cooking spray. Repeat procedure with remaining drumsticks. Sprinkle remaining cornflake mixture evenly over drumsticks on baking sheet. Lightly coat with cooking spray.3. Bake at 425° for 25 to 30 minutes or until drumsticks are well browned and done. Serve immediately.</p>
+        </div>
+        
+        <div class = "text-center">
+        <button class="btn bookmark tastebtn" type="submit" formaction="friedchicken"><a href="#">Bookmark</a></button>
+        <button class ="btn completion tastebtn"><a href ="completion"> Complete<a></button>
+        </div>
+        
+    </div>
+    </div> <!-- end of wrapper div -->
+    
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/backbutton.js"></script>
+    <script src="js/bookmarkaction.js"></script>
+</body>
+</html>

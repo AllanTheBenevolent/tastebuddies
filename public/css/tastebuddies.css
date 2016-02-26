@@ -1,0 +1,66 @@
+body{
+    background-color: #D83142;
+    margin: 1px;
+}
+
+h1{
+    color: white;
+    font-family: 'Candal', sans-serif;
+    text-align: center;
+}
+
+div.tastebuddylist{
+    border-top: 5px solid #FF6666;   
+}
+
+p#description{
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+p#tastebuddy{
+    position: relative;
+    top: -15px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Candal', sans-serif;
+}
+
+a img.tastebuddy{
+    border-radius: 30px;
+    border: 4px solid;
+    border-color: #FF6666;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    height: 120px; width:100px;
+}
+
+a img.tastebuddyLocked{
+    border-radius: 30px;
+    border: 4px solid;
+    border-color: #FF6666;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    height: 120px; width:100px;
+}
+
+a img.top{
+    margin-top: 50px;
+    height: 120px; width:100px;
+}
+
+a img.unlocked.active{
+    background-color: #FFEE00;
+    border-color: #FEF99D;
+    border-radius: 30px;
+    border: 4px solid;
+    margin-bottom: 20px;
+    margin-left: 30px;
+}
+    
+
+
+

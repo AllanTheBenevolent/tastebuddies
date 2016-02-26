@@ -1,0 +1,22 @@
+body{
+    background-color: #FF6666;
+    margin: 1px;
+}
+
+h1{
+    color: white;
+    font-family: 'Candal', sans-serif;
+    text-align: center;
+}
+
+img.maintastebuddy{
+    position: fixed;
+    right: 0; 
+    bottom: 0;
+}
+
+img.speechbubble{
+    position: fixed;
+    right: 30; 
+    bottom: 0;
+}

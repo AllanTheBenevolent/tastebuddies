@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<!-- style nav bar, add algorithm, add back buton -->
+<head>
+    <!-- styles the input bar -->
+    <!--Allan was here -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <title>Tastebuddies</title>
+</head>
+
+<body>
+    <div class="wrapper">
+            <!--Top Navbar-->
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="cook">
+                            <h3 id="tastebuddiestitle">Tastebuddies</h3>
+                        </a>
+                        
+                        <div class="dropdown pull-right">
+                            <button id="dLabel" type="button" class = "btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </button>
+                            <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+                                <li class="active"><a href="cook">COOK</a></li>
+                                <li><a href="profile">PROFILE</a></li>
+                                <li><a href="tastebuddies">TASTEBUDDIES</a></li>
+                                <li><a href="help">HELP</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="index">SIGN OUT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      <button type="button" id="back">BACK</button>
+        
+     <br>
+     <br>   
+    <div class="container text-center">
+        <img class = "animated infinite bounce" src="img/congrats_speechbubble.png" height="180" width="350">
+        <br>
+        <img class = "animated infinite bounce" src="{{mainbuddy}}" height="220" width="200">
+
+        <h4 class = "text animated bounceIn">You actually cooked something!</h4> 
+        <h4 class = "text animated bounceIn">Now you're one step closer to becoming a chef!</h4>
+        
+        
+    </div>
+
+    <br>
+    <br>
+    <div class= "text-center">
+    <a href = "cook"<button type="button" class = "tastebtn">Home</button></a>
+
+    </div> <!-- end of wrapper div -->
+    
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/homepage.js"></script>
+    <script src= "js/backbutton.js"></script>
+</body>
+</html>

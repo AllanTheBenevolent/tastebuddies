@@ -1,0 +1,12 @@
+{
+	"users": [
+		{
+			"firstname": "Tricia",
+			"lastname": "Ngoon",
+			"email": "triciangoon@gmail.com",
+			"password": "password",
+			"main": "Bearger",
+			"bookmarked": "1"
+		}
+	]
+}

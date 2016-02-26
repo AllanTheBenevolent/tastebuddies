@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Ryan Weng">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--CSS Stylesheets-->
+        <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" type="text/css" href="css/help.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+        <!--Scripts go here-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+
+        <title>
+            Tastebuddies | Help 
+        </title>
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <!--Top Navbar-->
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="cook">
+                            <h3 id="tastebuddiestitle">Tastebuddies</h3>
+                        </a>
+                        
+                        <div class="dropdown pull-right">
+                            <button id="dLabel" type="button" class = "btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </button>
+                            <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+                                <li><a href="cook">COOK</a></li>
+                                <li><a href="profile">PROFILE</a></li>
+                                <li><a href="tastebuddies">TASTEBUDDIES</a></li>
+                                <li class="active"><a href="help">HELP</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="index">SIGN OUT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--start--><!--Front page carousel-->
+            <div class="container center_text">
+                <h1>Help</h1>
+            </div>
+            <div id="myCarousel" class="carousel slide" data-wrap="false">
+                <!--<ol class="carousel-indicators">
+                    <li id="1" data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li id="2" data-target="#myCarousel" data-slide-to="1"></li>
+                    <li id="3" data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>-->
+
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="img/help.step1.png" alt="Sleepless" class="img-responsive img_carousel">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/help.step2.png" alt="FUSION Finale" class="img-responsive img_carousel">
+                    </div>
+
+                    <div class="item">
+                        <img src="img/help.step3.png" alt="Tawny" class="img-responsive img_carousel">
+                    </div>
+                </div>
+            </div>
+
+            <a class ="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+
+            <a class ="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+            
+            <!-- Buddy -->
+            <img class="maintastebuddy" src="{{mainbuddy}}" height="120" width="100">
+            <img class="speechbubble" src="img/help.buddystep1.png" height="110" width="290">
+<!--end-->
+            <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <script src="js/help.js"></script>
+        </div>    
+    </body>
+</html>

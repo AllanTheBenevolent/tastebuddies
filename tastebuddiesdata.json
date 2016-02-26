@@ -1,0 +1,28 @@
+{
+	"alltastebuddies": [
+		{
+			"name": "Pandacake",
+			"image": "img/pandacakee.png",
+			"id": "tastebuddy_1",
+			"popup":"popupbuddy_1"			
+		},
+		{
+			"name": "Bearger",
+			"image": "img/bearger.png",
+			"id": "tastebuddy_2",
+			"popup":"popupbuddy_2"			
+		},
+		{
+			"name": "Mr. Frying Pan",
+			"image": "img/mrfryingpan.png",
+			"id": "tastebuddy_3",
+			"popup":"popupbuddy_3"			
+		},
+		{
+			"name": "Eggy",
+			"image": "img/boiled egg.png",
+			"id": "tastebuddy_4",
+			"popup":"popupbuddy_4"			
+		}
+	]
+}

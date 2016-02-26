@@ -1,0 +1,100 @@
+{
+	"recipes": [
+		{
+			"name": "Chicken Skewers",
+			"img": "img/chickenskewer.png",
+            "instruction": "Soak a package of bamboo skewers in warm water for 20 to 30 minutes; drain. Preheat grill to medium-high. Thread 3 pieces of chicken on each skewer. Brush chicken with olive oil and sprinkle with salt and pepper. Douse a paper towel with vegetable oil and, holding it with tongs, carefully oil grill grate (or, away from heat, mist grill grate generously with nonstick cooking spray). Arrange chicken skewers on grill so that they are not touching. Cover grill. Grill chicken until cooked through, 6 to 8 minutes, turning once. Serve hot or at room temperature. Or let them cool, cover with plastic wrap and refrigerate to serve later",
+            "url": "chickenskewers",
+            "ingredients": [
+            {
+                "name": "chicken"
+            },
+            {
+                "name": "olive oil" 
+            },
+            {
+                "name": "salt"
+            },
+            {
+                "name": "pepper"
+            }
+            ]
+		},
+		{
+			"name": "Chicken Sandwiches with Melted Cheese",
+			"img": "img/chickensandwicheswithmeltedcheese.png",
+            "instruction": "Heat oven to 350° F. Spread the butter on one side of each slice of bread, then lay 4 of them on a greased baking sheet, butter-side down.Divide the chicken among the 4 slices and top with some of the cheese and apple slices. Place the remaining bread slices on top, butter-side up. Bake for 10 minutes. Turn and bake until crispy and golden, about 10 minutes more. Cut in half and serve immediately.",
+            "url": "chickensandwich",
+            "ingredients": [
+            {
+                "name": "chicken"
+            },
+            {
+                "name": "unsalted butter" 
+            },
+            {
+                "name": "bread"
+            },
+            {
+                "name": "cheese"
+            },
+            {
+                "name": "apple"    
+            }
+            ]
+		},
+        {
+			"name": "Sun-Dried Tomato Chicken",
+			"img": "img/sundriedtomatochicken.jpg",
+            "instruction": "1. Arrange chicken pieces in a single layer in a lightly greased 13- x 9-inch baking dish. Pour dressing evenly over chicken pieces, and sprinkle with ground pepper. 2. Bake, uncovered, at 400° for 1 hour or until done, basting every 15 minutes. Sprinkle baked chicken with desired toppings. Note: For testing purposes only, we used Good Seasons Sun Dried Tomato Vinaigrette With Roasted Red Pepper dressing. Sun-dried Tomato Chicken Breasts: Substitute 6 skinned and boned chicken breasts for chicken pieces. Prepare recipe as directed, decreasing bake time to 30 minutes.",
+            "url": "sundriedtomatochicken",
+            "ingredients": [
+            {
+                "name": "chicken"
+            },
+            {
+                "name": "vinaigrette" 
+            },
+            {
+                "name": "pepper"
+            },
+            {
+                "name": "sun-dried tomato"
+            }
+            ]
+		},
+        {
+			"name": "Crispy Oven Fried Chicken",
+			"img": "img/friedchicken.jpg",
+            "instruction": "1. Combine first 5 ingredients in a large zip-top plastic freezer bag; seal and shake well to combine. 2. Pour buttermilk into a shallow bowl. Dip 2 drumsticks in buttermilk, and place in bag. Seal and shake well, coating drumsticks completely. Place drumsticks on an aluminum foil-lined baking sheet coated with cooking spray. Repeat procedure with remaining drumsticks. Sprinkle remaining cornflake mixture evenly over drumsticks on baking sheet. Lightly coat with cooking spray.3. Bake at 425° for 25 to 30 minutes or until drumsticks are well browned and done. Serve immediately.",
+            "url": "friedchicken",
+            "ingredients": [
+            {
+                "name": "cornflakes"
+            },
+            {
+                "name": "parmesan cheese" 
+            },
+            {
+                "name": "salt"
+            },
+            {
+                "name": "pepper"
+            },
+            {
+                "name": "red pepper"  
+            },
+            {
+                "name": "buttermilk"   
+            },
+            {
+                "name": "chicken"
+            },
+            {
+                "name": "vegatable oil"
+            }
+            ]
+		}
+		
+	]
+}

@@ -1,0 +1,99 @@
+body{
+    background-color: #D83142;
+    margin: 1px;
+}
+
+
+div.recipe{
+    border-top: 5px solid #FF6666;   
+}
+
+div.directions{
+    margin-bottom: 150px;
+}
+h1{
+    color: white;
+    font-family: 'Candal', sans-serif;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-family: 'Candal', sans-serif;
+    text-align: center;
+}
+
+ul.ingredients{
+    list-style-type: circle;
+}
+
+li#ingredients{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+p{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+p#servings{
+    text-align: center;    
+}
+
+.have{
+    background-color: #FF6666;
+    border-radius: 20px;
+    margin-left: 10px; margin-right: 10px;
+    padding-bottom: 1px;
+}
+
+/*
+.want{
+    background-color: #FF6666;
+    border-radius: 20px;
+    margin-left: 10px; margin-right: 10px;
+    padding-bottom: 1px;
+}*/
+
+.directions{
+    background-color: #FF6666;
+    border-radius: 20px;
+    margin-left: 10px; margin-right: 10px;
+    padding-bottom: 1px;
+}
+
+.bookmark {
+    position: relative;
+    top: -120px;
+}
+
+.completion {
+    position: relative;
+    top: -120px;
+}
+
+p{
+    color: white;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#back{ 
+    position: relative; top: -10px; left: 10px;
+    width: 70px; 
+    padding: 8px 6px; 
+    background-color: #FEF99D; 
+    color: #CC9900;
+    text-transform: uppercase; 
+    font-weight: bold; 
+    border: 1px solid #FFCC33; 
+    border-radius: 5px; 
+    font-family: 'Candal', sans-serif;
+
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7), 0 -1px 0 #CC9900;  
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.6), inset 0 -1px 2px rgba(255, 255, 255, 0.7), 0 -5px 0 #FFEE00, 0 -6px 0 #FFEE00;
+}

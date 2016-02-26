@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Ryan Weng">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--CSS Stylesheets-->
+        <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+        <link type="text/css" rel="stylesheet" href="css/editprofile.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+        
+        <!--Scripts go here-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        
+        <title>
+            Tastebuddies | Edit Profile    
+        </title>
+    </head>
+    
+    <body>
+        <div class="wrapper">
+            <!--Top Navbar-->
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="cook">
+                            <h3 id="tastebuddiestitle">Tastebuddies</h3>
+                        </a>
+                        
+                        <div class="dropdown pull-right">
+                            <button id="dLabel" type="button" class = "btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </button>
+                            <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+                                <li><a href="cook">COOK</a></li>
+                                <li class="active"><a href="profile">PROFILE</a></li>
+                                <li><a href="tastebuddies">TASTEBUDDIES</a></li>
+                                <li><a href="help">HELP</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="index">SIGN OUT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--start-->
+<div class="container">
+  <h1 class="page-header">Edit Profile</h1>
+  <div class="row">
+    <!-- left column -->
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="text-center">
+        <img src="{{mainbuddy}}" class="avatar img-thumbnail" alt="avatar">
+      </div>
+    </div>
+    <!-- edit form column -->
+    <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+      <h3>Personal info</h3>
+      {{#each currentuser}}
+      <form class="form-horizontal" role="form">
+        
+        <div class="form-group">
+          <label class="col-md-3 control-label">First Name:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="{{firstname}}" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Last Name:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="{{lastname}}" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Email:</label>
+          <div class="col-lg-8">
+            <input class="form-control lightfont" value="{{email}}" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Password:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="password" type="password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Confirm password:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="{{password}}" type="password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label"></label>
+          <div class="col-md-8">
+            <a class="btn btn-default buttonclr" href="profile" role="button">Save Changes</a>
+            <a class="btn btn-default buttonclr" href="profile" role="button">Cancel</a>
+          </div>
+        </div>
+      </form>
+      {{/each}}
+    </div>
+  </div>
+</div>
+
+<!--end-->
+            
+        </div>    
+
+    </body>
+</html>

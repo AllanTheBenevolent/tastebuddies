@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="Ryan Weng">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--CSS Stylesheets-->
+        <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
+        <link type="text/css" rel="stylesheet" href="css/recipes.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+        
+        <!--Scripts go here-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        
+        <title>
+            TasteBuddies | Bookmarked Recipes   
+        </title>
+    </head>
+    
+    <body  style="overflow:hidden">
+        <div class="wrapper">
+            <!--Top Navbar-->
+            <div class="navbar navbar-default navbar-fixed-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="cook">
+                            <h3 id="tastebuddiestitle">Tastebuddies</h3>
+                        </a>
+                        
+                        <div class="dropdown pull-right">
+                            <button id="dLabel" type="button" class = "btn-lg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Menu
+                            </button>
+                            <ul class="dropdown-menu pull-right" aria-labelledby="dLabel">
+                                <li class="active"><a href="cook">COOK</a></li>
+                                <li><a href="profile">PROFILE</a></li>
+                                <li><a href="tastebuddies">TASTEBUDDIES</a></li>
+                                <li><a href="help">HELP</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="index">SIGN OUT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        <!--start-->
+        <!-- Header -->
+        <button type="button" id="back">BACK</button>
+
+        <br>
+        <br>
+        <h1>Bookmarked Recipes</h1>
+        <p id="description">Check out the recipes you've bookedmarked!</p>
+
+        <div class="container recipeslist" style="height:500px; overflow-y:scroll" >
+        <div class="row">
+            
+            {{#each bookmarkedrecipes}}
+            <div class="col-xs-9">
+            <a href="{{url}}" class="cook"><img class="recipes" src="{{img}}" height="300" width="340">
+                    <p class="recipe">{{name}}</p></a>
+            </div>
+            {{/each}}
+
+            <!--
+            <div class="col-xs-9">
+                <img class="recipes" src="img/chickensalad.jpg" height="300" width="340">
+                <p class="recipe">Chicken Salad</p>
+                <div class="recipe1">
+               <a href="chickensandwichrecipe" class="cook"><img class="cookicon" src="img/cook-before.png" height="60" width="60"></a>
+                <a href="#" class="bookmark"><img class="bookmarkicon" src="img/bookmark-before.png" height="60" width="60"></a>
+                </div>
+            </div>
+            <div class="col-xs-9 lastrecipe">
+                <img class="recipes lastrecipe" src="img/chickenwrap.jpg" height="300" width="340">
+                <p class="recipe">Chicken Wrap</p>
+                <a href="chickensandwichrecipe" class="cook"><img class="cookicon" src="img/cook-before.png" height="60" width="60"></a>
+                <a href="#" class="bookmark"><img class="bookmarkicon" src="img/bookmark-before.png" height="60" width="60"></a>
+
+            </div>-->
+            </div>
+            <!-- Buddy -->
+            </div>
+<!--end-->
+            
+        <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="js/bookmark.js"></script>
+    <script src="js/backbutton.js"></script>
+
+</body>
+</html>
