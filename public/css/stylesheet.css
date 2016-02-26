@@ -29,6 +29,15 @@
     color: white;
 }
 
+.directions{
+    font-family: "Candal", sans-serif;
+    background-color: #FF6666;
+    border-radius: 20px;
+    margin-left: 10px; margin-right: 10px;
+    padding-bottom: 1px;
+    color: white;
+}
+
 
 /* NavBar Styling */
 /*.navbar-fixed-top {

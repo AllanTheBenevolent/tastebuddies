@@ -4,16 +4,17 @@
 <head>
     <!-- styles the input bar -->
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/tastebuddies.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
 
-	<title>Tastebuddies | Recipes</title>
+    <title>Tastebuddies | Recipes</title>
 </head>
 
 <body style="overflow:hidden">
@@ -53,7 +54,7 @@
         <div class="row">
             {{#each alltastebuddies}}
             <div class="col-xs-6 col-sm-4">
-                <a href="#{{popup}}" class="tastebuddy project-link" data-toggle="modal"><img class="tastebuddy top unlocked" src="{{image}}">
+                <a href="#" class="tastebuddy project-link" data-toggle="modal"><img class="tastebuddy top unlocked" src="{{image}}">
                     <p id="tastebuddy">{{name}}</p></a>
 
                 <br>
@@ -62,7 +63,7 @@
                 <div class= "text-center">
                  <a href="#{{id}}" class="project-link" data-toggle="modal"> 
                     <button type="button" class="tastebtn"><i class="fa fa-times"></i>Info</button> </a>
-                </div>
+                </div> 
             </div>
             {{/each}}
 
@@ -80,30 +81,43 @@
                 <a href="#" class="tastebuddy"><img class="tastebuddy unlocked" src="img/bearger.png"><p id="tastebuddy">Bearger</p></a>
             </div>-->
             <div class="col-xs-6 col-sm-4">
-                <a href="#" class="tastebuddyLocked"><img class="tastebuddy" src="img/pizza-locked.png"><p id="tastebuddy">Locked</p></a>
+                <a href="#" class="tastebuddyLocked project-link" data-toggle="modal"><img class="tastebuddy" src="img/pizza-locked.png"><p id="tastebuddy">Locked</p></a>
 
-                <!--temporary will put button in when finished -->
-                <p class ="text-center">Info button will consturct</p>    
-
-            </div>
-            <div class="col-xs-6 col-sm-4">
-                <a href="#" class="tastebuddyLocked"><img class="tastebuddy" src="img/cupcake-locked.png"><p id="tastebuddy">Locked</p></a>
-
-                <!--temporary will put button in when finished -->
-                <p class ="text-center">Info button will consturct</p>
+                <!--button that will lead to info page -->
+                <div class= "text-center">
+                 <a href="#tastebuddy_locked" class="project-link" data-toggle="modal"> 
+                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>Info</button> </a>
+                </div> 
+        
 
             </div>
             <div class="col-xs-6 col-sm-4">
-                <a href="#" class="tastebuddyLocked"><img class="tastebuddy bottom" src="img/pizza-locked.png"><p id="tastebuddy">Locked</p></a>
+                <a href="#" class="tastebuddyLocked project-link" data-toggle="modal"><img class="tastebuddy" src="img/cupcake-locked.png"><p id="tastebuddy">Locked</p></a>
 
-            <!--temporary will put button in when finished -->
-                <p class ="text-center">Info button will consturct</p>
+               <!--button that will lead to info page -->
+               <div class= "text-center">
+                 <a href="#tastebuddy_locked" class="project-link" data-toggle="modal"> 
+                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>Info</button> </a>
+                </div> 
+
+            </div>
+            <div class="col-xs-6 col-sm-4">
+                <a href="#" class="tastebuddyLocked project-link" data-toggle="modal"><img class="tastebuddy bottom" src="img/pizza-locked.png"><p id="tastebuddy">Locked</p></a>
+
+            <!--button that will lead to info page-->
+            <div class= "text-center">
+                 <a href="#tastebuddy_locked" class="project-link" data-toggle="modal"> 
+                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>Info</button> </a>
+            </div> 
 
             </div><div class="col-xs-6 col-sm-4">
-                <a href="#" class="tastebuddyLocked"><img class="tastebuddy bottom" src="img/cupcake-locked.png"><p id="tastebuddy">Locked</p></a>
+                <a href="#" class="tastebuddyLocked"><img class="tastebuddy bottom project-link" data-toggle="modal" src="img/cupcake-locked.png"><p id="tastebuddy">Locked</p></a>
 
-             <!--temporary will put button in when finished -->
-                <p class ="text-center">Info button will consturct</p>   
+           <!--button that will lead to info page-->
+           <div class= "text-center">
+                 <a href="#tastebuddy_locked" class="project-link" data-toggle="modal"> 
+                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>Info</button> </a> 
+            </div>
             </div>
          </div> <!--end row div-->                                                   
         </div> <!-- end container div-->
@@ -119,6 +133,142 @@
 
  <!---Pandacakes description for Info button -->
  <div class="project-modal modal fade" id="tastebuddy_1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+
+                            <h1>Pandacakes</h1>
+        
+                            <br>    
+
+                            <img class="maintastebuddy" src="img/pandacakee.png" height="200" width="150">
+                            
+                            <br>
+                            <div class = "directions">
+                            <p>This is Pandacakes, your first tastebuddy and your first companion to guide you through your cooking adventures.<p>
+                            </div>
+                            <br>
+
+                        </div>
+
+                         <div>
+                        <button type="button" class="tastebtn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="project-modal modal fade" id="tastebuddy_2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+
+                            <h1>Bearger</h1>
+        
+                            <br>
+
+                            <img class="maintastebuddy" src="img/bearger.png" height="200" width="150">
+                            
+                            <br>
+                            
+                            
+                            <div class ="directions">
+                            <p>This is bearger, a gift from our developers for using this application during its beta testing. This is an exclusive buddy to add to your collection. Thank you beta tester!<p>
+                            </div>
+
+                            <br>
+                            
+                        </div>
+
+                         <div>
+                        <button type="button" class="tastebtn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="project-modal modal fade" id="tastebuddy_3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+
+                            <h1>Mr. Frying Pan</h1>
+        
+                            <br>
+                            
+                            <img class="maintastebuddy" src="img/mrfryingpan.png" height="200" width="150">
+                            
+                            <br>
+                            
+                            <div class ="directions">
+                            <p>This is Mr. Frying Pan, one of the developers favorite buddy. Inspired by Allan since his favorite kitchen appliance was a frying pan. This is also a free exclusive buddy given to the first 100 users.<p>
+                            </div>
+
+                            <br>
+                            
+                        </div>
+
+                         <div>
+                        <button type="button" class="tastebtn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="project-modal modal fade" id="tastebuddy_4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+
+                            <h1>Eggy</h1>
+        
+                            <br>
+
+                             <img class="maintastebuddy" src="img/boiled egg.png" height="200" width="150">
+                            
+                            <br>
+                            
+                            
+                            <div class = "directions">
+                            <p>This is Eggy. Like the famous singer! Get it? Iggy Iggy. Given to users who love making egg dishes.<p>
+                            </div>
+
+                            <br>
+                            
+                        </div>
+
+                         <div>
+                        <button type="button" class="tastebtn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="project-modal modal fade" id="tastebuddy_1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
            
             <div class="container">
@@ -145,7 +295,47 @@
     </div>
 
 
+
+ <div class="project-modal modal fade" id="tastebuddy_locked" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+
+                            <h1>ITS LOCKED</h1>
+     
+
+                            <br>
+                            <div class = "directions">
+                            <p>This buddy is locked! Try to cook more or try more recipes to unlock this buddy!<p>
+                            </div>
+                            <br>
+
+                        </div>
+
+                         <div>
+                        <button type="button" class="tastebtn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!------------------------------>
+<!------------------------------>
+<!------------------------------>
+<!------------------------------>
 <!---Popup when clicking on img -->
+<!------------------------------>
+<!------------------------------>
+<!------------------------------>
+<!------------------------------>
+
 
      <div class="project-modal modal fade" id="popupbuddy_1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -156,11 +346,97 @@
                         <div class="modal-body">
                             
 
-                            <h1>THANKS FOR PICKING ME</h1>
+                            <h1>THANKS FOR PICKING ME!</h1>
         
                             <br>
                             
-                            <h4>description</h4>
+                            <img class="maintastebuddy animated infinite tada" src="img/pandacakee.png" height="300" width="250">
+
+    
+                            
+                        </div>
+
+                         <div>
+                        <button type="button" class="tastebtn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal modal fade" id="popupbuddy_1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+
+                            <h1>THANKS FOR PICKING ME!</h1>
+        
+                            <br>
+                            
+                            <img class="maintastebuddy animated infinite tada" src="img/pandacakee.png" height="300" width="250">
+
+    
+                            
+                        </div>
+
+                         <div>
+                        <button type="button" class="tastebtn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal modal fade" id="popupbuddy_2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+
+                            <h1>THANKS FOR PICKING ME!</h1>
+        
+                            <br>
+                            
+                            <img class="maintastebuddy animated infinite tada" src="img/bearger.png" height="300" width="250">
+
+    
+                            
+                        </div>
+
+                         <div>
+                        <button type="button" class="tastebtn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-modal modal fade" id="popupbuddy_3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+
+                            <h1>THANKS FOR PICKING ME!</h1>
+        
+                            <br>
+                            
+                            <img class="maintastebuddy animated infinite tada" src="img/mrfryingpan.png" height="300" width="250">
+
+    
                             
                         </div>
 
@@ -175,6 +451,33 @@
 
 
 
+<div class="project-modal modal fade" id="popupbuddy_4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+           
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            
+
+                            <h1>THANKS FOR PICKING ME!</h1>
+        
+                            <br>
+                            
+                            <img class="maintastebuddy animated infinite tada" src="img/boiled egg.png" height="300" width="250">
+
+    
+                            
+                        </div>
+
+                         <div>
+                        <button type="button" class="tastebtn" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     
