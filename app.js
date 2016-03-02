@@ -65,6 +65,7 @@ app.get('/friedchicken', friedchicken.friedchickenPage);
 app.get('/bookmarked', bookmarked.bookmarkedPage);
 app.post('/bookmarked', bookmarked.bookmarkedAction);
 app.post('/add', add.addItem); 
+app.post('/delete', add.deleteItem); 
 app.get('/completion', completion.completionPage);
 
 // Example route

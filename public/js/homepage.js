@@ -10,21 +10,19 @@ function checkRecipeList(e) {
     console.log("Checking recipe list!");
 }
 
-//$('input.solid').click(clickAdd); // remove if you want to use the above code
-
-//function clickAdd(e){   
-    // To Disable Submit Button By Default
-    
-    /*if( jQuery.isEmptyObject(data) == true ){
-        document.getElementById("item").style.display = "none";
-        $('button.submit').prop('disabled', true);
-    }
-    else{
-        $('button.submit').prop('disabled', false);
-        return;
-    }*/
-//}
-
-$("li#item").on("click", function(){
+$('li#item').on('click', function(){
     $(this).css('display','none');
+    var item = $(this).text();
+    item = item.slice(0, item.length - 2);
+    $.post('/delete', {'item': item});
+});
+
+$('.submit-disabled').click(function(){
+    $('.speechbubble').attr('src', 'img/submit-oops.png').addClass("animated bounce");
+    $('.maintastebuddy').addClass("animated bounce");
+    
+});
+
+$('#addBtn').click(function(){
+    $('.speechbubble').attr('src', 'img/yumhomepage.png').addClass("animated bounce");
 });

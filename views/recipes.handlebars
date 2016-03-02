@@ -9,6 +9,8 @@
         <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
         <link type="text/css" rel="stylesheet" href="css/bootstrap.css"/>
         <link type="text/css" rel="stylesheet" href="css/recipes.css"/>
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+
         <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
         
         <!--Scripts go here-->
@@ -59,9 +61,6 @@
                 <div class="col-xs-9">
                 <a href="{{url}}" class="cook"><img class="recipes" src="{{img}}" height="300" width="340">
                     <p class="recipe">{{name}}</p></a>
-                    <!--<a href="{{url}}" class="cook"><img class="cookicon" src="img/cook-before.png" height="60" width="60"></a>
-                    <a href="#" class="bookmark"><img class="bookmarkicon" src="img/bookmark-before.png" height="60" width="60"></a> -->
-
             </div>
             {{/each}}
             <!--
@@ -82,8 +81,8 @@
             </div>-->
             </div>
             <!-- Buddy -->
-        <img class="maintastebuddy" src="{{mainbuddy}}" height="120" width="100">
-        <img class="speechbubble" src="img/recipes-tasty.png" height="110" width="100">
+        <img class="maintastebuddy animated bounce" src="{{mainbuddy}}" height="120" width="100">
+        <img class="speechbubble animated bounce" src="img/recipes-tasty.png" height="110" width="100">
             </div>
 <!--end-->
             

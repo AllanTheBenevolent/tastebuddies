@@ -16,7 +16,7 @@
 	<title>Tastebuddies</title>
 </head>
 
-<body style="overflow:hidden">
+<body style="overflow:scroll">
     <div class="wrapper">
             <!--Top Navbar-->
             <div class="navbar navbar-default navbar-fixed-top">
@@ -49,6 +49,7 @@
         <h1> Chicken Sandwich</h1>
         <p id="servings">Servings: 1</p>
         
+        
         <div class="container recipe" style="height:500px; overflow-y:scroll" >
         <img class="recipes" src="img/chickensandwich.jpg" height="300" width="340"> 
         <div class="have">
@@ -71,9 +72,12 @@
         <h2>Directions</h2>
             <p>Lightly toast 2 slices of bread. Place the lettuce, sliced tomatoes, and chicken on the bread.</p>
         </div>
-
-        <button class="btn bookmark tastebtn"><a href="#">Bookmark</a></button>
-        <button class ="btn bookmark tastebtn"><a href ="completion"> Complete<a></button>
+        <br>
+         <!--Buttons for completion & bookmarking-->
+        <div class = "text-center">
+        <button class="btn bookmark tastebtn" type="submit" formaction="chickenskewers"><a href="#">Bookmark</a></button>
+        <button class="btn completion tastebtn"><a href ="completion"> Complete Recipe<a></button>
+        </div>
 
     </div>
     </div> <!-- end of wrapper div -->

@@ -11,6 +11,8 @@ h1{
 
 div.tastebuddylist{
     border-top: 5px solid #FF6666;   
+    height:300px; 
+    overflow-y:scroll;
 }
 
 p#description{

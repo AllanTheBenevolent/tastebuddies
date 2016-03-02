@@ -6,5 +6,7 @@ var mainBud = require("../mainbuddy.json");
  */
 
 exports.cookPage = function(req, res){
-  res.render('cook', {userItems:data["items"], mainbuddy:mainBud.mainbuddy});
+  var model =  { userItems:data["items"], mainbuddy:mainBud.mainbuddy};
+  model.itemsAreNotEmpty = data.items.length !== 0;
+  res.render('cook', model);
 };

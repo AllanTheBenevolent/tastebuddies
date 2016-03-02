@@ -8,13 +8,12 @@ div.recipe{
     border-top: 5px solid #FF6666;   
 }
 
-div.directions{
-    margin-bottom: 150px;
-}
+
 h1{
     color: white;
     font-family: 'Candal', sans-serif;
     text-align: center;
+    font-size: 30px;
 }
 
 h2{
@@ -50,29 +49,11 @@ p#servings{
     padding-bottom: 1px;
 }
 
-/*
-.want{
-    background-color: #FF6666;
-    border-radius: 20px;
-    margin-left: 10px; margin-right: 10px;
-    padding-bottom: 1px;
-}*/
-
 .directions{
     background-color: #FF6666;
     border-radius: 20px;
     margin-left: 10px; margin-right: 10px;
     padding-bottom: 1px;
-}
-
-.bookmark {
-    position: relative;
-    top: -120px;
-}
-
-.completion {
-    position: relative;
-    top: -120px;
 }
 
 p{

@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
     <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -51,10 +53,11 @@
         <div id="inputItems">
             <form id="items-form" role="form" method="post" action="/add">
                 <input type="text" class="form-control" id="addItems" placeholder="ex. chicken" required name="itemName">
-                <!-- add disabled = "disabled" to input tag below to use code (disable 'ADD' until fields are nonempty) -->
                 <input type="submit" class="solid" value="Add" id="addBtn">
             </form>
         </div>
+        
+
         
         <div class = "text-center">
             {{#each userItems}}
@@ -63,7 +66,12 @@
             </ul>
             {{/each}}
             
-            <button class="submit" disabled="disabled"><a href="recipes" disabled="disabled">Submit</a></button>
+            {{#if itemsAreNotEmpty}}
+            <button class="submit"><a href="recipes">Submit</a></button>
+            {{else}}
+            <button class="submit submit-disabled"><span>Submit</span></button>
+
+            {{/if}}
         </div>
         
         <button class="help"><a href="help">?</a></button>

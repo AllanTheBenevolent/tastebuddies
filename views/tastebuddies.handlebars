@@ -46,15 +46,15 @@
         
                                                         
         <!-- Header -->
-        <h1> Tastebuddies</h1>
-        <p id="description"> Tastebuddies are your friends. They help you cook and eat yummy meals. Find new friends by trying new recipes! Click on the tastebuddy you want to use!</p>
+        <h1>Your Tastebuddies</h1>
+        <p id="description"> Tastebuddies are your friends. They help you cook and eat yummy meals. Click on the tastebuddy you want to use as your <b>Main Buddy</b>!</p>
           
         <!-- List of Tastebuddies -->
-        <div class="container tastebuddylist" style="height:400px; overflow-y:scroll" >
+        <div class="container tastebuddylist">
         <div class="row">
             {{#each alltastebuddies}}
             <div class="col-xs-6 col-sm-4">
-                <a href="#" class="tastebuddy project-link" data-toggle="modal"><img class="tastebuddy top unlocked" src="{{image}}">
+                <a href="#{{popup}}" class="tastebuddy project-link" data-toggle="modal"><img class="tastebuddy top unlocked" src="{{image}}">
                     <p id="tastebuddy">{{name}}</p></a>
 
                 <br>
@@ -62,7 +62,7 @@
                 <!--Info button generates information about tastebuddy-->
                 <div class= "text-center">
                  <a href="#{{id}}" class="project-link" data-toggle="modal"> 
-                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>Info</button> </a>
+                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>About</button> </a>
                 </div> 
             </div>
             {{/each}}
@@ -81,42 +81,42 @@
                 <a href="#" class="tastebuddy"><img class="tastebuddy unlocked" src="img/bearger.png"><p id="tastebuddy">Bearger</p></a>
             </div>-->
             <div class="col-xs-6 col-sm-4">
-                <a href="#" class="tastebuddyLocked project-link" data-toggle="modal"><img class="tastebuddy" src="img/pizza-locked.png"><p id="tastebuddy">Locked</p></a>
+                <a href="#tastebuddy_locked" class="tastebuddyLocked project-link" data-toggle="modal"><img class="tastebuddy" src="img/pizza-locked.png"><p id="tastebuddy">Locked</p></a>
 
                 <!--button that will lead to info page -->
                 <div class= "text-center">
                  <a href="#tastebuddy_locked" class="project-link" data-toggle="modal"> 
-                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>Info</button> </a>
+                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>About</button> </a>
                 </div> 
         
 
             </div>
             <div class="col-xs-6 col-sm-4">
-                <a href="#" class="tastebuddyLocked project-link" data-toggle="modal"><img class="tastebuddy" src="img/cupcake-locked.png"><p id="tastebuddy">Locked</p></a>
+                <a href="#tastebuddy_locked" class="tastebuddyLocked project-link" data-toggle="modal"><img class="tastebuddy" src="img/cupcake-locked.png"><p id="tastebuddy">Locked</p></a>
 
                <!--button that will lead to info page -->
                <div class= "text-center">
                  <a href="#tastebuddy_locked" class="project-link" data-toggle="modal"> 
-                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>Info</button> </a>
+                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>About</button> </a>
                 </div> 
 
             </div>
             <div class="col-xs-6 col-sm-4">
-                <a href="#" class="tastebuddyLocked project-link" data-toggle="modal"><img class="tastebuddy bottom" src="img/pizza-locked.png"><p id="tastebuddy">Locked</p></a>
+                <a href="#tastebuddy_locked" class="tastebuddyLocked project-link" data-toggle="modal"><img class="tastebuddy bottom" src="img/pizza-locked.png"><p id="tastebuddy">Locked</p></a>
 
             <!--button that will lead to info page-->
             <div class= "text-center">
                  <a href="#tastebuddy_locked" class="project-link" data-toggle="modal"> 
-                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>Info</button> </a>
+                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>About</button> </a>
             </div> 
 
             </div><div class="col-xs-6 col-sm-4">
-                <a href="#" class="tastebuddyLocked"><img class="tastebuddy bottom project-link" data-toggle="modal" src="img/cupcake-locked.png"><p id="tastebuddy">Locked</p></a>
+                <a href="#tastebuddy_locked" class="tastebuddyLocked"><img class="tastebuddy bottom project-link" data-toggle="modal" src="img/cupcake-locked.png"><p id="tastebuddy">Locked</p></a>
 
            <!--button that will lead to info page-->
            <div class= "text-center">
                  <a href="#tastebuddy_locked" class="project-link" data-toggle="modal"> 
-                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>Info</button> </a> 
+                    <button type="button" class="tastebtn"><i class="fa fa-times"></i>About</button> </a> 
             </div>
             </div>
          </div> <!--end row div-->                                                   
@@ -149,7 +149,7 @@
                             
                             <br>
                             <div class = "directions">
-                            <p>This is Pandacakes, your first tastebuddy and your first companion to guide you through your cooking adventures.<p>
+                            <p>This is Pandacake, your first tastebuddy and your first companion to guide you through your cooking adventures.<p>
                             </div>
                             <br>
 
@@ -217,7 +217,7 @@
                             <br>
                             
                             <div class ="directions">
-                            <p>This is Mr. Frying Pan, one of the developers favorite buddy. Inspired by Allan since his favorite kitchen appliance was a frying pan. This is also a free exclusive buddy given to the first 100 users.<p>
+                            <p>This is Mr. Frying Pan, one of the developer's favorite buddy. Inspired by Allan since his favorite kitchen appliance was a frying pan. This is also a free exclusive buddy given to the first 100 users.<p>
                             </div>
 
                             <br>
@@ -252,7 +252,7 @@
                             
                             
                             <div class = "directions">
-                            <p>This is Eggy. Like the famous singer! Get it? Iggy Iggy. Given to users who love making egg dishes.<p>
+                            <p>This is Eggy. Like the famous singer! Get it? Iggy? Eggy? Given to users who love making egg dishes.<p>
                             </div>
 
                             <br>
@@ -346,11 +346,11 @@
                         <div class="modal-body">
                             
 
-                            <h1>THANKS FOR PICKING ME!</h1>
+                            <h1>Thanks for picking me as your MAIN BUDDY!</h1>
         
                             <br>
                             
-                            <img class="maintastebuddy animated infinite tada" src="img/pandacakee.png" height="300" width="250">
+                            <img class="maintastebuddy animated infinite tada" src="img/pandacakee.png" height="200" width="150">
 
     
                             
@@ -374,11 +374,11 @@
                         <div class="modal-body">
                             
 
-                            <h1>THANKS FOR PICKING ME!</h1>
+                            <h1>Thanks for picking me as your MAIN BUDDY!</h1>
         
                             <br>
                             
-                            <img class="maintastebuddy animated infinite tada" src="img/pandacakee.png" height="300" width="250">
+                            <img class="maintastebuddy animated infinite tada" src="img/pandacakee.png" height="200" width="150">
 
     
                             
@@ -402,11 +402,11 @@
                         <div class="modal-body">
                             
 
-                            <h1>THANKS FOR PICKING ME!</h1>
+                            <h1>Thanks for picking me as your MAIN BUDDY!</h1>
         
                             <br>
                             
-                            <img class="maintastebuddy animated infinite tada" src="img/bearger.png" height="300" width="250">
+                            <img class="maintastebuddy animated infinite tada" src="img/bearger.png" height="200" width="150">
 
     
                             
@@ -430,11 +430,11 @@
                         <div class="modal-body">
                             
 
-                            <h1>THANKS FOR PICKING ME!</h1>
+                            <h1>Thanks for picking me as your MAIN BUDDY!</h1>
         
                             <br>
                             
-                            <img class="maintastebuddy animated infinite tada" src="img/mrfryingpan.png" height="300" width="250">
+                            <img class="maintastebuddy animated infinite tada" src="img/mrfryingpan.png" height="200" width="150">
 
     
                             
@@ -460,11 +460,11 @@
                         <div class="modal-body">
                             
 
-                            <h1>THANKS FOR PICKING ME!</h1>
+                            <h1>Thanks for picking me as your MAIN BUDDY!</h1>
         
                             <br>
                             
-                            <img class="maintastebuddy animated infinite tada" src="img/boiled egg.png" height="300" width="250">
+                            <img class="maintastebuddy animated infinite tada" src="img/boiled egg.png" height="200" width="150">
 
     
                             

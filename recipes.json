@@ -21,7 +21,7 @@
             ]
 		},
 		{
-			"name": "Chicken Sandwiches with Melted Cheese",
+			"name": "Chicken Sandwich",
 			"img": "img/chickensandwicheswithmeltedcheese.png",
             "instruction": "Heat oven to 350° F. Spread the butter on one side of each slice of bread, then lay 4 of them on a greased baking sheet, butter-side down.Divide the chicken among the 4 slices and top with some of the cheese and apple slices. Place the remaining bread slices on top, butter-side up. Bake for 10 minutes. Turn and bake until crispy and golden, about 10 minutes more. Cut in half and serve immediately.",
             "url": "chickensandwich",
@@ -64,7 +64,7 @@
             ]
 		},
         {
-			"name": "Crispy Oven Fried Chicken",
+			"name": "Fried Chicken",
 			"img": "img/friedchicken.jpg",
             "instruction": "1. Combine first 5 ingredients in a large zip-top plastic freezer bag; seal and shake well to combine. 2. Pour buttermilk into a shallow bowl. Dip 2 drumsticks in buttermilk, and place in bag. Seal and shake well, coating drumsticks completely. Place drumsticks on an aluminum foil-lined baking sheet coated with cooking spray. Repeat procedure with remaining drumsticks. Sprinkle remaining cornflake mixture evenly over drumsticks on baking sheet. Lightly coat with cooking spray.3. Bake at 425° for 25 to 30 minutes or until drumsticks are well browned and done. Serve immediately.",
             "url": "friedchicken",

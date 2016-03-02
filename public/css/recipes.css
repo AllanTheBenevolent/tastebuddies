@@ -19,7 +19,7 @@ p#description{
 div.recipeslist{
     position: relative; top: -40px;
     border-top: 5px solid #FF6666;
-    height: 500px; 
+    height: 400px; 
     overflow-y:scroll;
 }
 
