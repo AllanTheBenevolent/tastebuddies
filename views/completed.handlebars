@@ -16,7 +16,7 @@
         <script src="js/bootstrap.js"></script>
         
         <title>
-            TasteBuddies | Bookmarked Recipes   
+            TasteBuddies | Completed Recipes   
         </title>
     </head>
     
@@ -53,13 +53,13 @@
 
         <br>
         <br>
-        <h1>Bookmarked Recipes</h1>
-        <p id="description">Check out the recipes you've bookmarked!</p>
+        <h1>Completed Recipes</h1>
+        <p id="description">Check out the recipes you've completed!</p>
 
         <div class="container recipeslist" style="height:500px; overflow-y:scroll" >
         <div class="row">
             
-            {{#each bookmarkedrecipes}}
+            {{#each completedrecipes}}
             <div class="col-xs-9">
             <a href="{{url}}" class="cook"><img class="recipes" src="{{img}}" height="300" width="340">
                     <p class="recipe">{{name}}</p></a>
@@ -89,7 +89,7 @@
             
         <!-- JQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="js/bookmark.js"></script>
+    <script src="js/completed.js"></script>
     <script src="js/backbutton.js"></script>
     
 

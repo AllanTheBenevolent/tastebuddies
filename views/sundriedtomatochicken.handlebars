@@ -16,7 +16,7 @@
 	<title>Tastebuddies</title>
 </head>
 
-<body style="overflow:scroll">
+<body style="overflow: hidden">
     <div class="wrapper">
             <!--Top Navbar-->
             <div class="navbar navbar-default navbar-fixed-top">
@@ -47,10 +47,15 @@
         <button type="button" id="back">BACK</button>
         
         <h1>Sun-Dried Tomato Chicken</h1>
-        <p id="servings">Servings: 1</p>
+        <p id="servings">Servings: 5</p>
         
+         <!--Buttons for completion & bookmarking-->
+        <div class = "text-center">
+        <button class="btn bookmark tastebtn" type="submit" formaction="chickenskewers"><a href="#" id="bookmark">Bookmark</a></button>
+        <button class="btn completion tastebtn"><a href ="completion" id="completion"> Complete Recipe<a></button>
+        </div>
         
-        <div class="container recipe" style="height:400px; overflow-y:scroll" >
+        <div class="container recipe" style="height: 330px; overflow-y:scroll" >
         <img class="recipes" src="img/sundriedtomatochicken.jpg" height="300" width="340"> 
         <div class="have">
         <h2>Items You Need</h2>
@@ -60,27 +65,11 @@
                 {{/each}}
             </ul>
         </div>
-        <!--
-        <div class="want">
-        <h2>Items You May Need</h2>
-            <ul class="ingredients">
-                <li id="ingredients">2 slices of bread</li>
-                <li id="ingredients">mustard, mayonnaise, and/or ketchup</li>
-                <li id="ingredients">cheese slices</li>
-            </ul>
-        </div>-->
         
         <div class="directions">
         <h2>Directions</h2>
-            <p>1. Arrange chicken pieces in a single layer in a lightly greased 13- x 9-inch baking dish. Pour dressing evenly over chicken pieces, and sprinkle with ground pepper. 2. Bake, uncovered, at 400° for 1 hour or until done, basting every 15 minutes. Sprinkle baked chicken with desired toppings. Note: For testing purposes only, we used Good Seasons Sun Dried Tomato Vinaigrette With Roasted Red Pepper dressing. Sun-dried Tomato Chicken Breasts: Substitute 6 skinned and boned chicken breasts for chicken pieces. Prepare recipe as directed, decreasing bake time to 30 minutes.</p>
+            <p>Arrange chicken pieces in a single layer in a lightly greased 13- x 9-inch baking dish. Pour dressing evenly over chicken pieces, and sprinkle with ground pepper. Bake, uncovered, at 400° for 1 hour or until done, basting every 15 minutes. Sprinkle baked chicken with desired toppings.</p>
         </div>
-        
-          <!--Buttons for completion & bookmarking-->
-        <div class = "text-center">
-        <button class="btn bookmark tastebtn" type="submit" formaction="chickenskewers"><a href="#" id="bookmark">Bookmark</a></button>
-        <button class="btn completion tastebtn"><a href ="completion" id="completion"> Complete Recipe<a></button>
-        </div>
-        
         
     </div>
     
@@ -89,5 +78,7 @@
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/backbutton.js"></script>
     <script src="js/bookmarkaction.js"></script>
+    <script src="js/completeaction.js"></script>
+    
 </body>
 </html>

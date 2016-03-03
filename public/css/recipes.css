@@ -15,12 +15,12 @@ p#description{
     padding-left: 10px; padding-right: 10px;
     position: relative; top: -40px;
 }
-
+    
 div.recipeslist{
     position: relative; top: -40px;
     border-top: 5px solid #FF6666;
-    height: 400px; 
     overflow-y:scroll;
+    height: 400px;
 }
 
 img.maintastebuddy{

@@ -17,12 +17,12 @@ $('li#item').on('click', function(){
     $.post('/delete', {'item': item});
 });
 
-$('.submit-disabled').click(function(){
-    $('.speechbubble').attr('src', 'img/submit-oops.png').addClass("animated bounce");
-    $('.maintastebuddy').addClass("animated bounce");
-    
-});
+$('.submit-disabled').on('click', (function(){
+    $('.speechbubble').attr('src', 'img/submit-oops.png').addClass("jello");
+    $('.maintastebuddy').addClass("shake");
+}));
+
 
 $('#addBtn').click(function(){
-    $('.speechbubble').attr('src', 'img/yumhomepage.png').addClass("animated bounce");
+    $('.speechbubble').attr('src', 'img/yumhomepage.png');
 });

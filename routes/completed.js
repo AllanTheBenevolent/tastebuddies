@@ -1,16 +1,16 @@
-var data = require('../bookmarked.json');
+var data = require('../completed.json');
 
 /*
  * GET chickensandwichrecipe page.
  */
 
-exports.bookmarkedPage = function(req, res){
-  res.render('bookmarked', {bookmarkedrecipes:data["recipes"]});
+exports.completedPage = function(req, res){
+  res.render('completed', {completedrecipes:data["recipes"]});
 };
 
-exports.bookmarkedAction = function (req, res) {
+exports.completedAction = function (req, res) {
 	var recipe = req.body; // { 'mainbuddy': link }
-
+	
 	var dupe = false;
     data.recipes.map(function (obj) {
         if (obj.name === recipe.name)
@@ -19,6 +19,4 @@ exports.bookmarkedAction = function (req, res) {
     
     if (!dupe)
 		data.recipes.push(recipe);
-    
-    //res.redirect('/cook');
 };

@@ -16,7 +16,7 @@
 	<title>Tastebuddies</title>
 </head>
 
-<body style="overflow:scroll">
+<body style="overflow: hidden">
     <div class="wrapper">
             <!--Top Navbar-->
             <div class="navbar navbar-default navbar-fixed-top">
@@ -47,11 +47,16 @@
         <button type="button" id="back">BACK</button>
         
         <h1> Chicken Skewers</h1>
-        <p id="servings">Servings: 1 </p>
+        <p id="servings">Servings: 4</p>
           
+        <!--Buttons for completion & bookmarking-->
+        <div class = "text-center">
+        <button class="btn bookmark tastebtn" type="submit" formaction="chickenskewers"><a href="#" id="bookmark">Bookmark</a></button>
+        <button class="btn completion tastebtn"><a href ="completion" id="completion"> Complete Recipe<a></button>
+        </div>
         
         
-        <div class="container recipe" style="height:400px; overflow-y:scroll" >
+        <div class="container recipe" style="height: 350px; overflow-y:scroll" >
         <img class="recipes" src="img/chickenskewer.png" height="300" width="340"> 
       
         <div class="have">
@@ -62,33 +67,18 @@
                 {{/each}}
             </ul>
         </div>
-        <!--
-        <div class="want">
-        <h2>Items You May Need</h2>
-            <ul class="ingredients">
-                <li id="ingredients">2 slices of bread</li>
-                <li id="ingredients">mustard, mayonnaise, and/or ketchup</li>
-                <li id="ingredients">cheese slices</li>
-            </ul>
-        </div>-->
         
         <div class="directions">
         <h2>Directions</h2>
-            <p>Soak a package of bamboo skewers in warm water for 20 to 30 minutes; drain. Preheat grill to medium-high. Thread 3 pieces of chicken on each skewer. Brush chicken with olive oil and sprinkle with salt and pepper. Douse a paper towel with vegetable oil and, holding it with tongs, carefully oil grill grate (or, away from heat, mist grill grate generously with nonstick cooking spray). Arrange chicken skewers on grill so that they are not touching. Cover grill. Grill chicken until cooked through, 6 to 8 minutes, turning once. Serve hot or at room temperature. Or let them cool, cover with plastic wrap and refrigerate to serve later.</p>
+            <p>Soak a package of bamboo skewers in warm water for 20 to 30 minutes; drain. Preheat grill to medium-high. Thread 3 pieces of chicken on each skewer. Brush chicken with olive oil and sprinkle with salt and pepper. Douse a paper towel with vegetable oil and, holding it with tongs, carefully oil grill grate. Arrange chicken skewers on grill so that they are not touching. Cover grill. Grill chicken until cooked through, 6 to 8 minutes, turning once.</p>
         </div>
-        <br>
-        <!--Buttons for completion & bookmarking-->
-        <div class = "text-center">
-        <button class="btn bookmark tastebtn" type="submit" formaction="chickenskewers"><a href="#" id="bookmark">Bookmark</a></button>
-        <button class="btn completion tastebtn"><a href ="completion" id="completion"> Complete Recipe<a></button>
-        </div>
-        
-
     </div>
     </div> <!-- end of wrapper div -->
     
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="js/backbutton.js"></script>
     <script src="js/bookmarkaction.js"></script>
+    <script src="js/completeaction.js"></script>
+
 </body>
 </html>

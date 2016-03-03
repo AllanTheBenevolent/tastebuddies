@@ -2,6 +2,10 @@ body {
     background: #D83142;
     padding-top: 90px;
 }
+
+h3{
+    margin-top: 25px;
+}
     
 .ingredients{
     text-align: center;

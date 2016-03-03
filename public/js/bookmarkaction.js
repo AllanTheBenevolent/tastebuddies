@@ -17,6 +17,7 @@ $('button.bookmark').click(function(){
 	console.log($(this).text());
 	$(this).text(friendName);
 
+
 });
 
 function clickBookmark(e){
@@ -26,4 +27,5 @@ function clickBookmark(e){
     else if (e == 'Bookmarked'){
         return 'Bookmark';
     }
+    
 }

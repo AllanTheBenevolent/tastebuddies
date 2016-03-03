@@ -8,20 +8,25 @@ function clickRight(e) {
     rightCount +=1;
     
     if(rightCount == 1){
-         $('img.speechbubble').attr('src', 'img/help.buddystep2.png')
+         $('img.speechbubble').attr('src', 'img/help.buddystep2.png').addClass('shake');
+         $('img.maintastebuddy').addClass('shake');
+
     }
     else if(rightCount == 2){
-         $('img.speechbubble').attr('src', 'img/help.buddystep3.png')
+         $('img.speechbubble').attr('src', 'img/help.buddystep3.png').addClass('jello'); 
+         $('img.maintastebuddy').addClass('jello');
+
     }
 }
 
 function clickLeft(e) {
     leftCount +=1;
     if(leftCount == 1){
-         $('img.speechbubble').attr('src', 'img/help.buddystep2.png')
+         $('img.speechbubble').attr('src', 'img/help.buddystep2.png');
+
     }
     else if(leftCount == 2){
-         $('img.speechbubble').attr('src', 'img/help.buddystep1.png')
+         $('img.speechbubble').attr('src', 'img/help.buddystep1.png');
     }
 }
    
