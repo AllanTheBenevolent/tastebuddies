@@ -23,10 +23,14 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
       else if( $this.val() !== '' ) {
 		    label.addClass('highlight');
 			}
+    }else{
     }
+
 
 });
 
+
+/**Deals with tab switching**/
 $('.tab a').on('click', function (e) {
   
   e.preventDefault();
@@ -34,6 +38,8 @@ $('.tab a').on('click', function (e) {
   $(this).parent().addClass('active');
   $(this).parent().siblings().removeClass('active');
   
+
+
   target = $(this).attr('href');
 
   $('.tab-content > div').not(target).hide();
