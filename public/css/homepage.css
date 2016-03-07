@@ -140,6 +140,22 @@ button.help{
     box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.6), inset 0 -1px 2px rgba(255, 255, 255, 0.7), 0 -5px 0 #FFEE00, 0 -6px 0 #FFEE00;
 }
 
+button.help:active{
+ background-color: gold;
+ }
+ 
+ button.submit:active{
+  background-color: gold;
+ }
+ 
+ button.submit-disabled:active{
+    background-color: darkgray;
+ }
+ 
+ input[type="submit"].solid:active{
+    background-color: gold;
+}
+
 .submit a{
     text-decoration: none;
 }

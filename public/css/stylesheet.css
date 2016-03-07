@@ -152,10 +152,20 @@ div {
 
 a#bookmark{
     color: #CC9900;
+    text-decoration:none;
 }
 
 a#completion{
     color: #CC9900;
+    text-decoration:none;
+}
+
+.tastentn:active{
+    background-color:gold;
+}
+
+#back:active{
+    background-color:gold;
 }
 
 
