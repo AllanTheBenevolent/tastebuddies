@@ -2,21 +2,22 @@
 <html>
 <!-- style nav bar, add algorithm, add back buton -->
 <head>
-    
     <!-- styles the input bar -->
+    <!--Allan was here -->
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/chickensandwichrecipe.css">
+    <link rel="stylesheet" type="text/css" href="css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
     
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
-	<title>Tastebuddies</title>
+    <title>Tastebuddies</title>
 </head>
 
-<body style="overflow: hidden">
+<body>
     <div class="wrapper">
             <!--Top Navbar-->
             <div class="navbar navbar-default navbar-fixed-top">
@@ -44,42 +45,29 @@
                     </div>
                 </div>
             </div>
+      <button type="button" id="back">BACK</button>
         
-    <!-- start -->
-        <button type="button" id="back">BACK</button>
+     <br>
+     <br>   
+    <div class="container text-center">
+        <img class = "animated infinite wobble" src="img/hello_speechbubble.png" height="120" width="200">
+        <br>
+        <img class = "animated infinite wobble" src="img/mrfryingpan.png" height="120" width="100">
+        <h4 class = "text animated bounceIn">You unlocked Mr. Frying Pan because you made a fried dish!</h4> 
         
-        <h1>Fried Chicken</h1>
-        <p id="servings">Servings: 4</p>
-        
-         <!--Buttons for completion & bookmarking-->
-        <div class = "text-center">
-        <button class="bookmark tastebtn" type="submit" formaction="chickenskewers"><a href="#" id ="bookmark">Bookmark</a></button>
-        <button class="completion tastebtn"><a href ="newBuddy" id="completion">Finish Cooking<a></button>
-        </div>
-        
-        <div class="container recipe" style="height:350px; overflow-y:scroll" >
-        <img class="recipes" src="img/friedchicken.jpg" height="300" width="340"> 
-        <div class="have">
-        <h2>Items You Need</h2>
-            <ul class="ingredients">
-                {{#each friedchickenrecipe}}
-                <li id="ingredients">{{name}}</li>
-                {{/each}}
-            </ul>
-        </div>
-        
-        <div class="directions">
-        <h2>Directions</h2>
-            <p>Combine first 5 ingredients in a large zip-top plastic freezer bag; seal and shake well to combine. Pour buttermilk into a shallow bowl. Dip 2 drumsticks in buttermilk, and place in bag. Seal and shake well, coating drumsticks completely. Place drumsticks on an aluminum foil-lined baking sheet coated with cooking spray. Repeat procedure with remaining drumsticks. Sprinkle remaining cornflake mixture evenly over drumsticks on baking sheet. Lightly coat with cooking spray. Bake at 425° for 30 minutes.</p>
-        </div>
         
     </div>
+
+    <br>
+    <br>
+    <div class= "text-center">
+    <a href = "cook"<button type="button" class = "tastebtn">Home</button></a>
+
     </div> <!-- end of wrapper div -->
     
     <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="js/backbutton.js"></script>
-    <script src="js/bookmarkaction.js"></script>
-    <script src="js/completeaction.js"></script>
-
+    <script src="js/homepage.js"></script>
+    <script src= "js/backbutton.js"></script>
+    {{> googleAnalytics}}
 </body>
 </html>

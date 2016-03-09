@@ -23,6 +23,7 @@ var bookmarked = require('./routes/bookmarked');
 var add = require('./routes/add');
 var completion = require('./routes/completion');
 var completed = require('./routes/completed');
+var newBuddy = require('./routes/newBuddy');
 
 
 
@@ -72,6 +73,7 @@ app.post('/bookmarked', bookmarked.bookmarkedAction);
 app.post('/add', add.addItem); 
 app.post('/delete', add.deleteItem); 
 app.get('/completion', completion.completionPage);
+app.get('/newBuddy', newBuddy.addBuddy);
 
 // Example route
 // app.get('/users', user.list);
