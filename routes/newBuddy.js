@@ -1,7 +1,7 @@
 /*
- * GET home page
+ * GET home page.
  */
 
- exports.addBuddy= function(req,res){
- 	res.render('newBuddy');
- };
+exports.addBuddy= function(req, res){
+  res.render('newBuddy');
+};
