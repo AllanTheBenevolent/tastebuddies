@@ -4,4 +4,4 @@
 
  exports.addBuddy= function(req,res){
  	res.render('newBuddy');
- }
+ };
