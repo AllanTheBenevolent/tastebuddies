@@ -51,13 +51,12 @@
         <div id="inputItems">
             <form id="items-form" role="form" method="get" action="/add">
                 <input type="text" class="form-control" id="addItems" placeholder="ex. chicken" required name="itemName">
-                <!-- add disabled = "disabled" to input tag below to use code (disable 'ADD' until fields are nonempty) -->
+       
                 <input type="submit" class="solid" value="Add">
             </form>
         </div>
         <div class = "text-center">
-        <!--<a class="disabled" id="submit" href="recipes"><img class="submit" src="img/submitgray.png" height="40" width="100"></a>-->
-        <!--<a id="submit" href="recipes"><img class="submit" src="img/submit.png" height="40" width="100"></a>--> 
+  
             {{#each userItems}}
             <ul>
                 <li id="item">{{name}} <p id="exit">&#10006;</p></li>
